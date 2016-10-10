@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--定义图片的属性：边框宽度、边内颜色、边外颜色-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness"
+            format="dimension"/>
+        <attr name="border_inside_color"
+            format="color"/>
+        <attr name="border_outside_color"
+            format="color"/>
+    </declare-styleable>
+</resources>

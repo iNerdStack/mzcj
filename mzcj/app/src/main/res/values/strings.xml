@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">拇指车检</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_page">首页</string>
+    <string name="car_info">爱车信息</string>
+    <string name="owner_info">车主资料</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="car_file">爱车档案</string>
+    <string name="title_activity_illegal_query">IllegalQueryActivity</string>
+    <string name="title_activity_car_insurance">CarInsuranceActivity</string>
+    <string name="hint_input_phone_number">请输入11位手机号码</string>
+    <string name="hint_input_password">请输入6位数字密码</string>
+    <string name="login_agree">登录即表示同意</string>
+    <string name="user_service_protocol">《车检用户服务协议》</string>
+    <string name="station_name_example">杭州交警支队第三检测站</string>
+    <string name="hint_feed_back">您好，如果遇到什么系统问题，或有更好的建议，欢迎您发送给我们，谢谢！</string>
+
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <array name="type">
+        <item>默认</item>
+    </array>
+
+    <array name="range">
+        <item>全市</item>
+    </array>
+
+    <string name="str_recorder_normal">按住 说话</string>
+    <string name="str_recorder_recording">松开 结束</string>
+    <string name="str_recorder_want_cancel">松开手指 取消发送</string>
+
+    <string name="default_ip">115.29.109.162</string>
+    <string name="default_port">8080</string>
+    <string name="action_save">保存</string>
+
+    <string name="title_car_inspection">车检</string>
+    <string name="title_car_info">爱车信息</string>
+    <string name="title_owner_info">车主资料</string>
+    <string name="title_car_file">爱车档案</string>
+    <string name="title_select_car_inspection_station">选择车检站</string>
+    <string name="title_select_time_way">选择时间和方式</string>
+    <string name="title_select_master">选择师傅</string>
+    <string name="title_sumbit_order">提交订单</string>
+    <string name="title_illegal_query">违章查询</string>
+    <string name="title_car_insurance">汽车保险</string>
+    <string name="title_repairing_station">附近汽修站</string>
+    <string name="title_car_inspection_library">验车必备库</string>
+    <string name="title_order_info">订单详情</string>
+    <string name="title_setting">设置</string>
+    <string name="title_modify_pwd">修改密码</string>
+    <string name="title_personal_info">个人信息</string>
+    <string name="title_my_coupon">我的优惠券</string>
+    <string name="title_wallet">钱包</string>
+    <string name="title_my_order">我的订单</string>
+    <string name="title_feed_back">意见反馈</string>
+    <string name="title_select_car_series">选择车系</string>
+    <string name="title_select_car_model">选择车型</string>
+    <string name="title_rating">评价</string>
+    <string name="title_city">常住城市</string>
+    <string name="title_select_coupon">选择优惠券</string>
+    <string name="title_register">注册</string>
+    <string name="title_car_file_detail">档案详情</string>
+
+    <string name="inspection_station_available">当天车检站很空哦</string>
+</resources>
