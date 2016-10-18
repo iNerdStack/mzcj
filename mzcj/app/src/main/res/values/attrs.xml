@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--定义图片的属性：边框宽度、边内颜色、边外颜色-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness"
+            format="dimension"/>
+        <attr name="border_inside_color"
+            format="color"/>
+        <attr name="border_outside_color"
+            format="color"/>
+    </declare-styleable>
+
+    <!--标题栏-->
+    <declare-styleable name="TitleBar">
+        <!--是否激活返回按钮-->
+        <attr name="enableBackBtn"
+            format="boolean" />
+        <!--返回按钮颜色-->
+        <attr name="backBtnColor"
+            format="reference|color" />
+        <!--是否激活标题分割线-->
+        <attr name="enableDivider"
+            format="boolean" />
+        <!--分割线颜色-->
+        <attr name="dividerColor"
+            format="reference|color" />
+        <!--左侧图标-->
+        <attr name="drawableLeftSrc"
+            format="reference|color" />
+        <!--做图标是否可点击-->
+        <attr name="drawableLeftClickable"
+            format="boolean" />
+        <!--右侧图标-->
+        <attr name="drawableRightSrc"
+            format="reference|color" />
+        <!--右图标是否可点击-->
+        <attr name="drawableRightClickable"
+            format="boolean" />
+        <!--图标间距-->
+        <attr name="drawableSpacing"
+            format="reference|float" />
+        <!--图标大小-->
+        <attr name="drawableDimen"
+            format="reference|float" />
+        <!--标题内容-->
+        <attr name="titleText"
+            format="reference|string" />
+        <!--标题文本大小-->
+        <attr name="titleTextSize"
+            format="reference|float" />
+        <!--标题文本颜色-->
+        <attr name="titleTextColor"
+            format="reference|color" />
+    </declare-styleable>
+</resources>
