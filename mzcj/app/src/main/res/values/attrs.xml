@@ -13,43 +13,43 @@
     <!--标题栏-->
     <declare-styleable name="TitleBar">
         <!--是否激活返回按钮-->
-        <attr name="enableBackBtn"
-            format="boolean" />
-        <!--返回按钮颜色-->
-        <attr name="backBtnColor"
-            format="reference|color" />
-        <!--是否激活标题分割线-->
-        <attr name="enableDivider"
-            format="boolean" />
-        <!--分割线颜色-->
-        <attr name="dividerColor"
-            format="reference|color" />
-        <!--左侧图标-->
-        <attr name="drawableLeftSrc"
-            format="reference|color" />
-        <!--做图标是否可点击-->
-        <attr name="drawableLeftClickable"
-            format="boolean" />
-        <!--右侧图标-->
-        <attr name="drawableRightSrc"
-            format="reference|color" />
-        <!--右图标是否可点击-->
-        <attr name="drawableRightClickable"
-            format="boolean" />
-        <!--图标间距-->
-        <attr name="drawableSpacing"
-            format="reference|float" />
-        <!--图标大小-->
-        <attr name="drawableDimen"
-            format="reference|float" />
-        <!--标题内容-->
-        <attr name="titleText"
-            format="reference|string" />
-        <!--标题文本大小-->
-        <attr name="titleTextSize"
-            format="reference|float" />
-        <!--标题文本颜色-->
-        <attr name="titleTextColor"
-            format="reference|color" />
+        <!--<attr name="enableBackBtn"-->
+            <!--format="boolean" />-->
+        <!--&lt;!&ndash;返回按钮颜色&ndash;&gt;-->
+        <!--<attr name="backBtnColor"-->
+            <!--format="reference|color" />-->
+        <!--&lt;!&ndash;是否激活标题分割线&ndash;&gt;-->
+        <!--<attr name="enableDivider"-->
+            <!--format="boolean" />-->
+        <!--&lt;!&ndash;分割线颜色&ndash;&gt;-->
+        <!--<attr name="dividerColor"-->
+            <!--format="reference|color" />-->
+        <!--&lt;!&ndash;左侧图标&ndash;&gt;-->
+        <!--<attr name="drawableLeftSrc"-->
+            <!--format="reference|color" />-->
+        <!--&lt;!&ndash;做图标是否可点击&ndash;&gt;-->
+        <!--<attr name="drawableLeftClickable"-->
+            <!--format="boolean" />-->
+        <!--&lt;!&ndash;右侧图标&ndash;&gt;-->
+        <!--<attr name="drawableRightSrc"-->
+            <!--format="reference|color" />-->
+        <!--&lt;!&ndash;右图标是否可点击&ndash;&gt;-->
+        <!--<attr name="drawableRightClickable"-->
+            <!--format="boolean" />-->
+        <!--&lt;!&ndash;图标间距&ndash;&gt;-->
+        <!--<attr name="drawableSpacing"-->
+            <!--format="reference|float" />-->
+        <!--&lt;!&ndash;图标大小&ndash;&gt;-->
+        <!--<attr name="drawableDimen"-->
+            <!--format="reference|float" />-->
+        <!--&lt;!&ndash;标题内容&ndash;&gt;-->
+        <!--<attr name="titleText"-->
+            <!--format="reference|string" />-->
+        <!--&lt;!&ndash;标题文本大小&ndash;&gt;-->
+        <!--<attr name="titleTextSize"-->
+            <!--format="reference|float" />-->
+        <!--&lt;!&ndash;标题文本颜色&ndash;&gt;-->
+        <!--<attr name="titleTextColor"-->
+            <!--format="reference|color" />-->
     </declare-styleable>
 </resources>

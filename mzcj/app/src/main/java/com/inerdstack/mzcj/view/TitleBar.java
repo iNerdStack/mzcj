@@ -69,9 +69,9 @@ public class TitleBar extends LinearLayout {
         super(context, attrs);
 
         // -获取属性
-        TypedArray ta = context.obtainStyledAttributes(R.styleable.TitleBar);
-        mBackBtnEnabled = ta.getBoolean(R.styleable.TitleBar_enableBackBtn, DEFAULT_BACK_BTN_ENABLED);
-        mBackBtnColor = ta.getInt(R.styleable.TitleBar_backBtnColor, DEFAULT_BACK_BTN_COLOR);
-        mDividerEnabled = ta.getBoolean(R.styleable.TitleBar_enableDivider, DEFAULT_DIVIDER_ENABLED);
+//        TypedArray ta = context.obtainStyledAttributes(R.styleable.TitleBar);
+//        mBackBtnEnabled = ta.getBoolean(R.styleable.TitleBar_enableBackBtn, DEFAULT_BACK_BTN_ENABLED);
+//        mBackBtnColor = ta.getInt(R.styleable.TitleBar_backBtnColor, DEFAULT_BACK_BTN_COLOR);
+//        mDividerEnabled = ta.getBoolean(R.styleable.TitleBar_enableDivider, DEFAULT_DIVIDER_ENABLED);
     }
 }
