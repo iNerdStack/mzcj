@@ -1,4 +1,4 @@
-package com.inerdstack.mzcj.global.view;
+package com.inerdstack.mzcj.global.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;

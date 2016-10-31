@@ -31,7 +31,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottombar_car_info"
+        android:id="@+id/bottombar_car"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -55,7 +55,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottombar_owner"
+        android:id="@+id/bottombar_me"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -78,27 +78,4 @@
             android:layout_marginBottom="7dp"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/bottombar_car_archives"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:layout_weight="1"
-        android:paddingTop="8dp"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="@dimen/icon_size_bottom_bar"
-            android:layout_height="@dimen/icon_size_bottom_bar"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/icon_locate"
-            android:layout_marginBottom="7dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="hehe"
-            android:layout_marginBottom="7dp"/>
-    </LinearLayout>
 </LinearLayout>

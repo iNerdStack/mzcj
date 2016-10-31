@@ -1,4 +1,4 @@
-package com.inerdstack.mzcj.global.view;
+package com.inerdstack.mzcj.global.views;
 
 import android.app.Activity;
 import android.content.Context;

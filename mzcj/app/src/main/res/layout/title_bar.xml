@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
         
-        <com.inerdstack.mzcj.global.view.SquareImageView
+        <com.inerdstack.mzcj.global.views.SquareImageView
             android:id="@+id/titlebar_back"
             android:clickable="true"
             android:layout_width="wrap_content"
@@ -27,7 +27,7 @@
             android:background="@drawable/icon_bg"
             app:solid="height"/>
 
-        <com.inerdstack.mzcj.global.view.SquareImageView
+        <com.inerdstack.mzcj.global.views.SquareImageView
             android:id="@+id/titlebar_left_icon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
             app:solid="height"/>
     </LinearLayout>
 
-    <com.inerdstack.mzcj.global.view.SquareImageView
+    <com.inerdstack.mzcj.global.views.SquareImageView
         android:id="@+id/titlebar_right_icon"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
