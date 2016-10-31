@@ -82,10 +82,16 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
     private TextView mTvTitle;
     // 返回按钮
     private ImageView mImgBack;
+    // 返回按钮容器
+    private RelativeLayout mLayoutBack;
     // 左侧图标
     private ImageView mImgLeftIcon;
+    // 左侧图标容器
+    private RelativeLayout mLayoutLeftIcon;
     // 右侧图标
     private ImageView mImgRightIcon;
+    // 右侧图标容器
+    private RelativeLayout mLayoutRightIcon;
     //分割线
     private View mDivider;
 
@@ -142,9 +148,12 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
 
         // -关联控件
         mTvTitle = (TextView) findViewById(R.id.titlebar_title);
-        mImgBack = (ImageView) findViewById(R.id.titlebar_back);
+        mImgBack = (ImageView) findViewById(R.id.titlebar_back_icon);
+        mLayoutBack = (RelativeLayout) findViewById(R.id.titlebar_back);
         mImgLeftIcon = (ImageView) findViewById(R.id.titlebar_left_icon);
+        mLayoutLeftIcon = (RelativeLayout) findViewById(R.id.titlebar_left);
         mImgRightIcon = (ImageView) findViewById(R.id.titlebar_right_icon);
+        mLayoutRightIcon = (RelativeLayout) findViewById(R.id.titlebar_right);
         mDivider = findViewById(R.id.titlebar_divider);
 
 
@@ -159,26 +168,26 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
 
         // 返回按钮
         if (mBackBtnEnabled) { // 激活状态下可见
-            mImgBack.setVisibility(VISIBLE);
+            mLayoutBack.setVisibility(VISIBLE);
         } else { // 非激活状态下不可见
-            mImgBack.setVisibility(GONE);
+            mLayoutBack.setVisibility(GONE);
         }
         // 监听事件回调
-        mImgBack.setOnClickListener(this);
+        mLayoutBack.setOnClickListener(this);
 
         // 左侧图标
         if (mDrawableLeftSrc != SRC_NULL) {
             // 设置图标可见
-            mImgLeftIcon.setVisibility(VISIBLE);
+            mLayoutLeftIcon.setVisibility(VISIBLE);
             // 设置资源
             mImgLeftIcon.setImageResource(mDrawableLeftSrc);
             // 如果图标可以点击
             if (mDrawableLeftClickable) {
-                mImgLeftIcon.setOnClickListener(this);
+                mLayoutLeftIcon.setOnClickListener(this);
             }
         } else {
             // 设置图标不可见
-            mImgLeftIcon.setVisibility(GONE);
+            mLayoutLeftIcon.setVisibility(GONE);
             // 不可点击
             mDrawableLeftClickable = false;
         }
@@ -186,16 +195,16 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         // 右侧图标
         if (mDrawableRightSrc != SRC_NULL) {
             // 设置图标可见
-            mImgRightIcon.setVisibility(VISIBLE);
+            mLayoutRightIcon.setVisibility(VISIBLE);
             // 设置资源
             mImgRightIcon.setImageResource(mDrawableRightSrc);
             // 如果图标可以点击
             if (mDrawableRightClickable) {
-                mImgRightIcon.setOnClickListener(this);
+                mLayoutRightIcon.setOnClickListener(this);
             }
         } else {
             // 设置图标不可见
-            mImgRightIcon.setVisibility(GONE);
+            mLayoutRightIcon.setVisibility(GONE);
             // 不可点击
             mDrawableRightClickable = false;
         }
@@ -208,6 +217,121 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
     public void setTitle(String title) {
         mTitleText = title;
         mTvTitle.setText(mTitleText);
+    }
+
+    /**
+     * 获取标题
+     */
+    public String getTitle() {
+        return mTitleText;
+    }
+
+    /**
+     * 设置标题字体大小
+     * @param size
+     */
+    public void setTitleTextSize(float size) {
+        mTitleTextSize = size;
+        mTvTitle.setTextSize(mTitleTextSize);
+    }
+
+    /**
+     * 设置标题字体颜色
+     * @param color
+     */
+    public void setTitleTextColor(int color) {
+        mTitleTextColor = color;
+        mTvTitle.setTextColor(mTitleTextColor);
+    }
+
+    /**
+     * 激活返回按钮
+     */
+    public void enableBackButton() {
+        mBackBtnEnabled = true;
+        mLayoutBack.setVisibility(VISIBLE);
+    }
+
+    /**
+     * 禁止返回按钮
+     */
+    public void disableBackButton() {
+        mBackBtnEnabled = false;
+        mLayoutBack.setVisibility(GONE);
+    }
+
+    /**
+     * 返回按钮是否激活
+     */
+    public boolean isBackButtonEnabled() {
+        return mBackBtnEnabled;
+    }
+
+    /**
+     * 激活左侧按钮
+     */
+    public void enableLeftIcon() {
+        mLayoutLeftIcon.setVisibility(VISIBLE);
+    }
+
+    /**
+     * 激活左侧图标
+     * @param resId
+     */
+    public void enableLeftIcon(int resId) {
+        mDrawableLeftSrc = resId;
+        mImgLeftIcon.setImageResource(mDrawableLeftSrc);
+        mLayoutLeftIcon.setVisibility(VISIBLE);
+    }
+
+    /**
+     * 设置左侧图标是否可点击
+     * @param isClickable
+     */
+    public void setLeftIconClickable(boolean isClickable) {
+        mDrawableLeftClickable = isClickable;
+        mLayoutLeftIcon.setClickable(mDrawableLeftClickable);
+    }
+
+    /**
+     * 左侧图标是否可以点击
+     * @return
+     */
+    public boolean isLeftIconClickable() {
+        return mDrawableLeftClickable;
+    }
+
+    /**
+     * 激活右侧图标
+     */
+    public void enableRightIcon() {
+        mLayoutRightIcon.setVisibility(VISIBLE);
+    }
+
+    /**
+     * 激活右侧图标
+     * @param resId
+     */
+    public void enableRightIcon(int resId) {
+        mDrawableRightSrc = resId;
+        mImgRightIcon.setImageResource(mDrawableRightSrc);
+        mLayoutRightIcon.setVisibility(VISIBLE);
+    }
+
+    /**
+     * 设置右侧图标是否可点击
+     * @param isClickable
+     */
+    public void setRightIconClickable(boolean isClickable) {
+        mDrawableRightClickable = isClickable;
+        mLayoutRightIcon.setClickable(mDrawableRightClickable);
+    }
+
+    /**
+     * 右侧图标是否可点击
+     */
+    public boolean isRightIconClickable() {
+        return mDrawableRightClickable;
     }
 
     @Override

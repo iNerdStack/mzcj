@@ -54,10 +54,11 @@
     </declare-styleable>
 
     <!--自定义ImageView属性-->
-    <declare-styleable name="MyImageView">
+    <declare-styleable name="MyScaleView">
         <attr name="solid">
             <enum name="width" value="-1" />
             <enum name="height" value="-2" />
         </attr>
+        <attr name="scale" format="float"/>
     </declare-styleable>
 </resources>

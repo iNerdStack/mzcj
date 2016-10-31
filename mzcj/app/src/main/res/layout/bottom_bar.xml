@@ -16,17 +16,20 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/bottombar_homepage_icon"
             android:layout_width="@dimen/icon_size_bottom_bar"
             android:layout_height="@dimen/icon_size_bottom_bar"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/icon_locate"
+            android:src="@drawable/icon_home_normal"
             android:layout_marginBottom="7dp" />
 
         <TextView
+            android:id="@+id/bottombar_homepage_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/color_tab_text_normal"
             android:layout_gravity="center_horizontal"
-            android:text="hehe"
+            android:text="首页"
             android:layout_marginBottom="7dp"/>
     </LinearLayout>
 
@@ -40,17 +43,19 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/bottombar_car_icon"
             android:layout_width="@dimen/icon_size_bottom_bar"
             android:layout_height="@dimen/icon_size_bottom_bar"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/icon_locate"
+            android:src="@drawable/icon_car_normal"
             android:layout_marginBottom="7dp" />
 
         <TextView
+            android:id="@+id/bottombar_car_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="hehe"
+            android:text="爱车"
             android:layout_marginBottom="7dp"/>
     </LinearLayout>
 
@@ -64,17 +69,19 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/bottombar_me_icon"
             android:layout_width="@dimen/icon_size_bottom_bar"
             android:layout_height="@dimen/icon_size_bottom_bar"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/icon_locate"
+            android:src="@drawable/icon_user_normal"
             android:layout_marginBottom="7dp" />
 
         <TextView
+            android:id="@+id/bottombar_me_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="hehe"
+            android:text="我"
             android:layout_marginBottom="7dp"/>
     </LinearLayout>
 

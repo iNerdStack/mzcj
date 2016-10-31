@@ -18,4 +18,6 @@
     
     <color name="color_chart_bar_graph">#fa5f62</color>
     <color name="color_rating_btn">#00e37f</color>
+
+    <color name="white">#ffffff</color>
 </resources>

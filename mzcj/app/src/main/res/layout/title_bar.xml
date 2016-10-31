@@ -9,45 +9,71 @@
         android:id="@+id/titlebar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:layout_centerInParent="true" />
-    
+        android:layout_centerInParent="true"
+        android:singleLine="true" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-        
-        <com.inerdstack.mzcj.global.views.SquareImageView
-            android:id="@+id/titlebar_back"
-            android:clickable="true"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:src="@drawable/ic_back"
-            android:background="@drawable/icon_bg"
-            app:solid="height"/>
 
-        <com.inerdstack.mzcj.global.views.SquareImageView
-            android:id="@+id/titlebar_left_icon"
+        <com.inerdstack.mzcj.global.views.ScaleRelativeLayout
+            android:id="@+id/titlebar_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:padding="8dp"
             android:background="@drawable/icon_bg"
-            app:solid="height"/>
+            android:clickable="true"
+            android:gravity="center"
+            app:solid="height"
+            app:scale="1">
+
+            <ImageView
+                android:id="@+id/titlebar_back_icon"
+                android:layout_width="@dimen/titlebar_icon_dimen_size"
+                android:layout_height="@dimen/titlebar_icon_dimen_size"
+                android:src="@drawable/icon_back" />
+        </com.inerdstack.mzcj.global.views.ScaleRelativeLayout>
+
+        <com.inerdstack.mzcj.global.views.ScaleRelativeLayout
+            android:id="@+id/titlebar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_bg"
+            android:clickable="true"
+            android:gravity="center"
+            app:solid="height"
+            app:scale="1">
+
+            <ImageView
+                android:id="@+id/titlebar_left_icon"
+                android:layout_width="@dimen/titlebar_icon_dimen_size"
+                android:layout_height="@dimen/titlebar_icon_dimen_size"/>
+
+        </com.inerdstack.mzcj.global.views.ScaleRelativeLayout>
+
     </LinearLayout>
 
-    <com.inerdstack.mzcj.global.views.SquareImageView
-        android:id="@+id/titlebar_right_icon"
-        android:layout_alignParentRight="true"
+    <com.inerdstack.mzcj.global.views.ScaleRelativeLayout
+        android:id="@+id/titlebar_right"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:padding="8dp"
         android:background="@drawable/icon_bg"
-        app:solid="height"/>
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center"
+        app:solid="height"
+        app:scale="1">
+
+        <ImageView
+            android:id="@+id/titlebar_right_icon"
+            android:layout_width="@dimen/titlebar_icon_dimen_size"
+            android:layout_height="@dimen/titlebar_icon_dimen_size"/>
+
+    </com.inerdstack.mzcj.global.views.ScaleRelativeLayout>
 
     <View
         android:id="@+id/titlebar_divider"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="#ffb6b6b6"/>
+        android:background="#ffb6b6b6" />
 </RelativeLayout>

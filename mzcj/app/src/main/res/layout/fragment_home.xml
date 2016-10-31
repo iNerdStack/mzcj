@@ -1,13 +1,18 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.inerdstack.mzcj.global.fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.inerdstack.mzcj.global.views.TitleBar
+        android:id="@+id/titlebar_homepage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:layout_height="wrap_content"
+        app:drawableLeftSrc="@drawable/icon_location"
+        app:drawableLeftClickable="true"
+        app:drawableRightSrc="@drawable/icon_qr_code"
+        app:drawableRightClickable="true"
+        app:titleBarText="首页"
+        app:titleBarTextColor="@color/white"/>
 </FrameLayout>
