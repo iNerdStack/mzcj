@@ -13,4 +13,6 @@
     <dimen name="height_order_info_item">26dp</dimen>
 
     <dimen name="app_bar_padding">0dp</dimen>
+
+    <dimen name="titlebar_height">50dp</dimen>
 </resources>
